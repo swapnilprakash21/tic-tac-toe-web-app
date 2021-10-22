@@ -33,9 +33,11 @@ const checkWin = () => {
             isgameover = true;
             gameover.play();
             document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "200px";
-            setTimeout(()=>{
-                alert(`Congratulations! ${boxtext[e[0]].innerText} Won`);
-            }, 1000);
+            // setTimeout(()=>{
+            //     alert(`Congratulations! ${boxtext[e[0]].innerText} Won`);
+            // }, 1000);
+            document.querySelector(".winModal").style.display = "block";
+            document.querySelector(".winModal").querySelector(".modal").querySelector(".modalBox").querySelector("#modalInfo").innerText = "Congratulations! " + boxtext[e[0]].innerText + " Won";
             
         }
     })
@@ -67,5 +69,10 @@ document.getElementById("reset").addEventListener('click', ()=> {
     isgameover = false;
     document.getElementsByClassName("info")[0].innerText = "Turn for " + turn;
     document.querySelector(".imgbox").getElementsByTagName("img")[0].style.width = "0vw";
-    document.querySelector(".line").style.width = "0vw";
+    // document.querySelector(".line").style.width = "0vw";
+});
+
+document.querySelector(".winModalDismiss").addEventListener('click',  () =>{
+    document.querySelector(".winModal").style.display = "none";
+    document.querySelector(".winModal").querySelector(".modal").querySelector(".modalBox").querySelector("#modalInfo").innerText = "";
 });
