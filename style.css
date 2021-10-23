@@ -6,25 +6,25 @@
   font-family: "Rubik", sans-serif;
 }
 
-.bl-0{
-    border-left: 0 !important;
+.bl-0 {
+  border-left: 0 !important;
 }
 
-.br-0{
-    border-right: 0 !important;
+.br-0 {
+  border-right: 0 !important;
 }
 
-.bt-0{
-    border-top: 0 !important;
+.bt-0 {
+  border-top: 0 !important;
 }
 
-.bb-0{
-    border-bottom: 0 !important;
+.bb-0 {
+  border-bottom: 0 !important;
 }
 
-.break{
-    width: 100%;
-    height: 2px;
+.break {
+  width: 100%;
+  height: 2px;
 }
 
 .navbar {
@@ -39,51 +39,51 @@
   list-style-type: none;
 }
 
-.gameContainer{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+.gameContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.gridContainer{
-    display: grid;
-    grid-template-rows: repeat(3, 10vw);
-    grid-template-columns: repeat(3, 10vw);
-    /* position: relative; */
+.gridContainer {
+  display: grid;
+  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 10vw);
+  /* position: relative; */
 }
 
-.gridContainer .box{
-    border: 2px solid #000000;
-    font-size: 8vw;
-    padding: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+.gridContainer .box {
+  border: 2px solid #000000;
+  font-size: 8vw;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.gridContainer .box:hover{
-    background-color: rgb(230, 228, 228);
+.gridContainer .box:hover {
+  background-color: rgb(230, 228, 228);
 }
 
-.gameInfo{
-    margin: 38px;
-    padding: 15px;
+.gameInfo {
+  margin: 38px;
+  padding: 15px;
 }
 
-.imgbox img{
-    width: 0;
-    transition: width 1s ease-in-out;
+.imgbox img {
+  width: 0;
+  transition: width 1s ease-in-out;
 }
-#reset{
-    height: 28px;
-    padding: 1px 8px;
-    margin: 1px 15px;
-    font-size: 15px;
-    font-weight: bolder;
-    border-radius: 6px;
-    cursor: pointer;
-    background-color: rgb(235, 228, 228);
+#reset {
+  height: 28px;
+  padding: 1px 8px;
+  margin: 1px 15px;
+  font-size: 15px;
+  font-weight: bolder;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: rgb(235, 228, 228);
 }
 /* .line{
     background-color: blueviolet;
@@ -94,74 +94,75 @@
 } */
 
 @media screen and (max-width: 800px) {
-    .gameContainer{
-        flex-wrap: wrap;
-    }
-    .gameInfo{
-        margin-top: 34px;
-    }
-    .gameInfo h1{
-        font-size: 1.5rem;
-    }
-    .gridContainer { 
-        grid-template-rows: repeat(3, 20vw);
-        grid-template-columns: repeat(3, 20vw);
-    }
-}
-
-.winModal{
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: auto;
-    height: 100%;
-    width: 100%;
-    display: none;
-}
-
-.winModal .modal{
-    background-color: rgba(158, 154, 154, 0.479);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.winModal .modal .modalBox{
-    background-color: #ffffff;
-    color: #000000;
-    width:35vw;
-    height: 22vw;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .gameContainer {
     flex-wrap: wrap;
-    padding: 5px;
-}
-
-.winModal .modal .modalBox .winModalDismiss{
-    height: 35px;
-    width: 50px;
-    background-color: rgb(20, 87, 20);
-    color: #ffffff;
-    border-radius: 4px;
-    cursor: pointer;
-    border-radius: 1px solid #000000;
-}
-
-.winModal .modal .modalBox h1{
+  }
+  .gameInfo {
+    margin-top: 34px;
+  }
+  .gameInfo h1 {
     font-size: 1.5rem;
+  }
+  .gridContainer {
+    grid-template-rows: repeat(3, 20vw);
+    grid-template-columns: repeat(3, 20vw);
+  }
 }
 
-.winModal .modal .modalBox img{
-    height: 12vw;
-    width: 12vw;
+.winModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  display: none;
 }
+
+.winModal .modal {
+  background-color: rgba(158, 154, 154, 0.479);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.winModal .modal .modalBox {
+  background-color: #ffffff;
+  color: #000000;
+  width: 35vw;
+  height: 22vw;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.winModal .modal .modalBox .winModalDismiss {
+  height: 35px;
+  width: 50px;
+  background-color: rgb(20, 87, 20);
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 1px solid #000000;
+}
+
+.winModal .modal .modalBox h1 {
+  font-size: 1.5rem;
+}
+
+.winModal .modal .modalBox img {
+  height: 12vw;
+  width: 12vw;
+}
+
 @media screen and (max-width: 800px) {
-    .winModal .modal .modalBox{
-        height: 45vw;
-        width: 60vw;
-    }
+  .winModal .modal .modalBox {
+    height: 65vw;
+    width: 79vw;
+  }
 }
