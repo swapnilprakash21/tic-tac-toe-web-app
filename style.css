@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Rubik", sans-serif;
 }
 
 .bl-0 {
@@ -27,17 +26,6 @@
   height: 2px;
 }
 
-.navbar {
-  height: 50px;
-  background-color: rgba(20, 17, 17, 0.89);
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 500;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-}
 
 .gameContainer {
   display: flex;
@@ -71,20 +59,6 @@
   padding: 15px;
 }
 
-.imgbox img {
-  width: 0;
-  transition: width 1s ease-in-out;
-}
-#reset {
-  height: 28px;
-  padding: 1px 8px;
-  margin: 1px 15px;
-  font-size: 15px;
-  font-weight: bolder;
-  border-radius: 6px;
-  cursor: pointer;
-  background-color: rgb(235, 228, 228);
-}
 /* .line{
     background-color: blueviolet;
     width: 0;
@@ -141,16 +115,6 @@
   padding: 5px;
 }
 
-.winModal .modal .modalBox .winModalDismiss {
-  height: 35px;
-  width: 50px;
-  background-color: rgb(20, 87, 20);
-  color: #ffffff;
-  border-radius: 4px;
-  cursor: pointer;
-  border-radius: 1px solid #000000;
-}
-
 .winModal .modal .modalBox h1 {
   font-size: 1.5rem;
 }
@@ -162,7 +126,7 @@
 
 @media screen and (max-width: 800px) {
   .winModal .modal .modalBox {
-    height: 65vw;
+    height: 70vw;
     width: 79vw;
   }
 }

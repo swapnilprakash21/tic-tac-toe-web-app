@@ -6,19 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="/common.css">
     <link rel="stylesheet" href="/style.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1555183045412737" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="navbar">
-        <ul>
-            <li>Tic Tac Toe</li>
+    <!-- The Navbar -->
+    <div class="navbar flex border-b-2 py-4 px-4 select-none">
+        <ul class="flex items-center">
+            <li class="text-purple-900 font-bold text-3xl">TicTacToe</li>
         </ul>
     </div>
-    <div class="gameContainer">
+    <!-- Welcome Message -->
+    <div class="text-5xl py-4 px-4 flex justify-center font-bold select-none text-rose-800">
+        <span>Welcome To Tic Tac Toe</span>
+    </div>
+    <!-- Game Container -->
+    <div class="gameContainer select-none">
         <div class="gridContainer">
-            <!-- <div class="line"></div> -->
             <div class="box bt-0 bl-0"><span class="boxText"></span></div>
             <div class="box bt-0"><span class="boxText"></span></div>
             <div class="box bt-0 br-0"><span class="boxText"></span></div>
@@ -30,24 +35,22 @@
             <div class="box br-0 bb-0"><span class="boxText"></span></div>
         </div>
         <div class="gameInfo">
-            <h1>Welcome to Tic Tac Toe</h1>
-            <div>
-                <span class="info">Turn for X</span>
-                <button id="reset">Reset</button>
-            </div>
-            <div class="imgbox">
-                <img src="/excited.gif" alt="" draggable="false">
+            <div class="border-2 border-slate-500 rounded-md py-10 px-3 flex justify-center items-center  select-none">
+                <span class="status px-3">Turn for <span class="info font-bold">X</span></span>
+                <button class="bg-slate-300 px-2 py-2 rounded-md cursor-pointer" id="reset">Reset</button>
             </div>
         </div>
     </div>
+    <!-- Displaying a modal to the user after the game is over. -->
     <div class="winModal">
         <div class="modal">
             <div class="modalBox">
-                <h1 id="modalInfo"></h1>
+                <p id="modalInfo" class="font-bold text-4xl"></p>
                 <div class="break"></div>
                 <img src="/excited.gif" alt="">
                 <div class="break"></div>
-                <button class="winModalDismiss">OK</button>
+                <button
+                    class="winModalDismiss select-none bg-orange-600 px-3 py-2 text-white rounded-md cursor-pointer font-bold">OK</button>
             </div>
         </div>
     </div>
