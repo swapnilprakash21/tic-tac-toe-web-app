@@ -31,6 +31,7 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  font-family: 'Rubik';
 }
 
 .gridContainer {
@@ -82,7 +83,7 @@
     grid-template-columns: repeat(3, 20vw);
   }
 }
-
+/* 
 .winModal {
   position: fixed;
   top: 0;
@@ -122,11 +123,11 @@
 .winModal .modal .modalBox img {
   height: 12vw;
   width: 12vw;
-}
+} */
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .winModal .modal .modalBox {
     height: 70vw;
     width: 79vw;
   }
-}
+} */

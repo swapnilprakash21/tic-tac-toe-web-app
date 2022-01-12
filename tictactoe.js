@@ -25,7 +25,7 @@ const checkWin = () => {
             isgameover = true;
             gameover.play();
             document.querySelector(".winModal").style.display = "block";
-            document.querySelector(".winModal").querySelector(".modal").querySelector(".modalBox").querySelector("#modalInfo").innerText = "Congratulations! " + boxtext[e[0]].innerText + " Won";
+            document.querySelector("#modalInfo").innerText = "Congratulations! " + boxtext[e[0]].innerText + " Won";
         }
     })
 }
@@ -39,7 +39,7 @@ Array.from(boxes).forEach(element => {
             Audioturn.play();
             checkWin();
             if (!isgameover) {
-                document.getElementsByClassName("info")[0].innerText =  turn;
+                document.getElementsByClassName("info")[0].innerText = turn;
             }
         }
     })

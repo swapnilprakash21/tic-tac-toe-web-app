@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" translate="no">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="/common.css">
     <link rel="stylesheet" href="/style.css">
@@ -18,7 +19,8 @@
         </ul>
     </div>
     <!-- Welcome Message -->
-    <div class="text-5xl py-4 px-4 flex justify-center font-bold select-none text-rose-800">
+    <div
+        class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl py-4 px-4 flex justify-center font-bold select-none text-rose-800">
         <span>Welcome To Tic Tac Toe</span>
     </div>
     <!-- Game Container -->
@@ -35,22 +37,28 @@
             <div class="box br-0 bb-0"><span class="boxText"></span></div>
         </div>
         <div class="gameInfo">
-            <div class="border-2 border-slate-500 rounded-md py-10 px-3 flex justify-center items-center  select-none">
-                <span class="status px-3">Turn for <span class="info font-bold">X</span></span>
-                <button class="bg-slate-300 px-2 py-2 rounded-md cursor-pointer" id="reset">Reset</button>
+            <div class="border-2 border-slate-500 rounded-md py-10 px-3 flex justify-center items-center select-none">
+                <span class="status px-3 md:text-xl xl:text-2xl xl:px-5">Turn for <span
+                        class="info font-bold">X</span></span>
+                <button class="bg-slate-300 px-2 py-2 rounded-md cursor-pointer xl:text-2xl xl:p-3"
+                    id="reset">Reset</button>
             </div>
         </div>
     </div>
     <!-- Displaying a modal to the user after the game is over. -->
-    <div class="winModal">
-        <div class="modal">
-            <div class="modalBox">
-                <p id="modalInfo" class="font-bold text-4xl"></p>
+    <div class="winModal fixed top-0 left-0 overflow-auto h-full w-full hidden select-none">
+        <div class="h-full w-full flex justify-center items-center" style="background-color: rgba(36, 33, 33, 0.479);">
+            <div
+                class="bg-white text-black w-72 h-72 px-2 sm:w-[28rem] sm:h-96 xl:w-[36rem] xl:h-[28rem] rounded-md flex justify-center items-center flex-col">
+                <p id="modalInfo" class="font-bold text-2xl sm:text-4xl xl:text-5xl"></p>
                 <div class="break"></div>
-                <img src="/excited.gif" alt="">
+                <img src="/excited.gif" alt="" class="h-32 w-24 py-5 sm:h-44 sm:w-36 sm:mt-7 xl:h-52 xl:w-44"
+                    draggable="false">
                 <div class="break"></div>
-                <button
-                    class="winModalDismiss select-none bg-orange-600 px-3 py-2 text-white rounded-md cursor-pointer font-bold">OK</button>
+                <div class="flex justify-center">
+                    <button
+                        class="winModalDismiss select-none bg-orange-600 px-3 py-2 mt-2 text-white rounded-md cursor-pointer font-bold sm:mt-10">OK</button>
+                </div>
             </div>
         </div>
     </div>
@@ -58,3 +66,6 @@
 </body>
 
 </html>
+
+
+<!-- Copyright 2021-22. All rights reserved. -->
